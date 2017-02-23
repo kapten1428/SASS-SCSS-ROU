@@ -1,0 +1,46 @@
+@mixin main-content($width: 960px){
+	width: $width;
+}
+
+@mixin margin-auto{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin margin-padding-0{
+	margin:0;
+	padding: 0;
+}
+
+@mixin button-shape{
+	width: 100px;
+	height: 35px;
+	background: #B0B0B0;
+}
+
+@mixin rounded($radius:5px){
+	border-radius : $radius;
+	border : none;
+}
+
+@mixin primary-button{
+	background-color: #5688AE;
+	color : #fff;
+}
+
+@mixin info-button{
+	background-color: #4EBADE;
+	color : #ffffff;
+}
+
+@mixin warning-button{
+	background-color : #EEE334;
+	color : #ffffff;
+}
+
+@mixin danger-button{
+	@include button-shape;
+	@include rounded;
+	background-color: #D41F1F;
+	color : #ffffff;
+}
