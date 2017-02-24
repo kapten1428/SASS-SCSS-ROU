@@ -11,3 +11,18 @@ $container-article:700px;
 
 //-------Category---------
 $category-width : 100px;
+
+$main-color : #857F7F;
+
+// -------THEME-----------
+//Header theme
+//Value only : Blue, Green, Default
+$header-theme : Blue;
+
+@if $header-theme == Blue {
+	$header-background: #31B0E5;
+}@else if $header-theme == Green {
+	$header-background: #719D72;
+}@else {
+	$header-background : #DF7967;
+}

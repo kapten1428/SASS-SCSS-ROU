@@ -1,3 +1,39 @@
+.col-1 {
+  widht: 2em; }
+
+.col-2 {
+  widht: 4em; }
+
+.col-3 {
+  widht: 6em; }
+
+.col-4 {
+  widht: 8em; }
+
+.col-5 {
+  widht: 10em; }
+
+.bob-banker-profile {
+  background-image: url("/image/bob-banker.png"); }
+
+.patty-plume-profile {
+  background-image: url("/image/patty-plume.png"); }
+
+.sandra-smith-profile {
+  background-image: url("/image/sandra-smith.png"); }
+
+.tiny {
+  font-size: 8px; }
+
+.small {
+  font-size: 16px; }
+
+.medium {
+  font-size: 32px; }
+
+.large {
+  font-size: 64px; }
+
 body {
   background-color: #E6E6E6;
   margin: 0;
@@ -8,6 +44,10 @@ body {
   width: 960px;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (max-width: 960px) {
+    .container {
+      width: auto;
+      max-width: 960px; } }
 
 header {
   width: 100%;
@@ -15,13 +55,13 @@ header {
   header #title-blog {
     position: relative;
     height: 100px;
-    background-color: #DF7967; }
+    background-color: #31B0E5; }
     header #title-blog h2 {
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
       font-weight: 100;
-      padding: 16.66667px 5px;
+      padding: tpad(20px, 5px);
       font-size: 50px;
       color: #fff; }
   header nav {
@@ -41,12 +81,15 @@ header {
     font-size: 14px;
     padding-right: 15px;
     color: #EC5F5F; }
+    header .nav-list__link:hover {
+      color: #6b2424; }
   header .nav-list__link:first-child {
     padding-left: 0; }
 
 #archive {
   position: relative;
-  top: 20px; }
+  top: 20px;
+  color: #857F7F; }
   #archive .container-article {
     float: left;
     width: 700px;
@@ -54,6 +97,10 @@ header {
     padding-left: 20px;
     padding-right: 12px;
     padding-bottom: 10px; }
+    @media only screen and (max-width: 960px) {
+      #archive .container-article {
+        margin: auto;
+        width: 90%; } }
     #archive .container-article h2 {
       font-family: 'Roboto';
       font-weight: 100;
@@ -70,6 +117,9 @@ header {
     float: right;
     height: 200px;
     background-color: #fff; }
+    @media only screen and (max-width: 960px) {
+      #archive .category {
+        display: none; } }
     #archive .category h4 {
       padding-left: 10px;
       font-weight: 300; }
@@ -95,6 +145,8 @@ header {
     border: none;
     background-color: #5688AE;
     color: #fff; }
+    #button-set .button-primary:hover {
+      background-color: #8aacc7; }
   #button-set .button-info {
     width: 100px;
     height: 35px;

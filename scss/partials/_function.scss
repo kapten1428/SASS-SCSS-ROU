@@ -1,0 +1,3 @@
+@function two-padding($x,$y) {
+   @return $n * $first-width + ($n - 1) * $second-width;
+}
